@@ -48,4 +48,8 @@ if __name__ == "__main__":
 
     if mediaID != -1:
         sources = getStreamingSources(mediaID)
-        print(sources)
+
+        for index, service in enumerate(sources):
+            print(f"{index + 1:2d}. {service}")
+
+        print("Streaming data powered by Watchmode.com")
